@@ -1,0 +1,68 @@
+.order-card {
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: black;
+
+}
+
+.order-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: left;
+    color: black;
+
+}
+
+.order-note {
+    font-size: 14px;
+    margin-bottom: 12px;
+    text-align: left;
+    color: black;
+
+}
+
+.order-details {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 12px;
+    text-align: left;
+    color: black;
+
+}
+
+.order-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 8px;
+    text-align: left;
+}
+
+.order-stars {
+    color: #FFD700;
+    font-size: 16px;
+}
+
+.active-yes {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 12px;
+    text-align: left;
+    color: green;
+
+}
+
+.active-no {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 12px;
+    text-align: left;
+    color: red;
+
+}

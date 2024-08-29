@@ -1,0 +1,170 @@
+<div style="height: 500px; text-align: center; justify-content: center;  align-items: center; margin-top: 100px;">
+    <div _ngcontent-ng-c2087310016="" class="auth-content">
+        <div _ngcontent-ng-c2087310016="" class="card custom-card">
+            <div _ngcontent-ng-c2087310016="" class="row align-items-center text-center">
+                <div _ngcontent-ng-c2087310016="" class="col-md-12">
+                    <div _ngcontent-ng-c2087310016="" class="card-body">
+
+                        <h4 _ngcontent-ng-c2087310016="" class="mb-3 f-w-400">Create Service</h4>
+
+                        <div _ngcontent-ng-c2087310016="" class="input-group mb-3">
+                            <span _ngcontent-ng-c2087310016="" id="basic-addon1" class="input-group-text">
+                                <mat-icon _ngcontent-ng-c2087310016="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+                                    aria-hidden="true" data-mat-icon-type="font">Name Service
+
+                                </mat-icon></span>
+
+                            <input [(ngModel)]="input.name" name="name" _ngcontent-ng-c2087310016="" type="text"
+                                placeholder="Name Service" aria-label="Name" aria-describedby="basic-addon1"
+                                class="form-control">
+                        </div>
+
+
+                        <div _ngcontent-ng-c2087310016="" class="input-group mb-3">
+                            <span _ngcontent-ng-c2087310016=""
+                                id="basic-addon1" class="input-group-text">
+
+                                <mat-icon _ngcontent-ng-c2087310016="" role="img"
+                                    class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+                                    aria-hidden="true" data-mat-icon-type="font">description
+                                
+                                </mat-icon></span>
+
+                            <input [(ngModel)]="input.description" name="description" _ngcontent-ng-c2087310016=""
+                                type="text" placeholder="description" aria-label="description"
+                                aria-describedby="basic-addon1" class="form-control">
+
+                        </div>
+
+
+                        <div _ngcontent-ng-c2087310016="" class="input-group mb-3">
+                            <span _ngcontent-ng-c2087310016=""
+                                id="basic-addon1" class="input-group-text">
+                                <mat-icon _ngcontent-ng-c2087310016="" role="img"
+                                    class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+                                    aria-hidden="true" data-mat-icon-type="font">Name Service
+                                </mat-icon></span>
+
+                            <input [(ngModel)]="input.titleArabic" name="titleArabic" _ngcontent-ng-c2087310016=""
+                                type="text" placeholder="اسم الخدمة" aria-label="Name" aria-describedby="basic-addon1"
+                                class="form-control">
+                        </div>
+
+
+                        <div _ngcontent-ng-c2087310016="" class="input-group mb-3">
+                            <span _ngcontent-ng-c2087310016=""
+                                id="basic-addon1" class="input-group-text">
+                                <mat-icon _ngcontent-ng-c2087310016="" role="img"
+                                    class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+                                    aria-hidden="true" data-mat-icon-type="font">description
+                                
+                                </mat-icon></span>
+
+                            <input [(ngModel)]="input.descriptionArabic" name="descriptionArabic"
+                                _ngcontent-ng-c2087310016="" type="text" placeholder="الوصف الخدمة"
+                                aria-label="description" aria-describedby="basic-addon1" class="form-control">
+                        </div>
+
+
+
+
+                        <div _ngcontent-ng-c2087310016="" class="input-group mb-3">
+                            <span _ngcontent-ng-c2087310016=""
+                                id="basic-addon3" class="input-group-text">
+                                <mat-icon _ngcontent-ng-c2087310016="" role="img"
+                                    class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+                                    aria-hidden="true" data-mat-icon-type="font">image
+                                </mat-icon></span>
+
+                            <input name="imagetitleservice" (change)="onFileSelected($event)"
+                                _ngcontent-ng-c2087310016="" type="file" placeholder="imageServiceUrl"
+                                aria-label="imageService" aria-describedby="basic-addon3" class="form-control">
+
+                        </div>
+
+                        <div _ngcontent-ng-c2087310016="" class="input-group mb-3">
+                            <span _ngcontent-ng-c2087310016="" id="basic-addon3" class="input-group-text">
+                                <mat-icon _ngcontent-ng-c2087310016="" role="img"
+                                    class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+                                    aria-hidden="true" data-mat-icon-type="font">Price
+                                </mat-icon></span>
+
+                            <input [(ngModel)]="input.price" name="price" _ngcontent-ng-c2087310016="" type="number"
+                                placeholder="Price" aria-label="Price" aria-describedby="basic-addon3"
+                                class="form-control">
+                        </div>
+
+
+                        <div _ngcontent-ng-c2087310016="" class="input-group mb-3">
+                            <span _ngcontent-ng-c2087310016=""
+                                id="basic-addon3" class="input-group-text">
+                                <mat-icon _ngcontent-ng-c2087310016="" role="img"
+                                    class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+                                    aria-hidden="true" data-mat-icon-type="font">Price
+                                </mat-icon></span>
+
+                            <input [(ngModel)]="input.discountPrice" name="discountPrice" _ngcontent-ng-c2087310016=""
+                                type="number" placeholder="DiscountPrice" aria-label="DiscountPrice"
+                                aria-describedby="basic-addon3" class="form-control">
+                        </div>
+
+
+                        <div _ngcontent-ng-c2087310016="" class="input-group mb-3">
+                            <span _ngcontent-ng-c2087310016=""
+                                id="basic-addon3" class="input-group-text">
+                                <mat-icon _ngcontent-ng-c2087310016="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+                                    aria-hidden="true" data-mat-icon-type="font">
+                                    description
+                                </mat-icon></span>
+
+                            <input [(ngModel)]="input.discountType" name="discountType" _ngcontent-ng-c2087310016=""
+                                type="text" placeholder="discountType" aria-label="discountType"
+                                aria-describedby="basic-addon3" class="form-control">
+                        </div>
+
+                        <div _ngcontent-ng-c2087310016="" class="input-group mb-3">
+                            <span _ngcontent-ng-c2087310016="" id="basic-addon3" class="input-group-text">
+                                <mat-icon _ngcontent-ng-c2087310016="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+                                    aria-hidden="true" data-mat-icon-type="font">Id
+                                </mat-icon></span>
+
+                            <input [(ngModel)]="input.categoryId" name="categoryId" _ngcontent-ng-c2087310016=""
+                                type="number" placeholder="CategoryId" aria-label="CategoryId"
+                                aria-describedby="basic-addon3" class="form-control">
+                        </div>
+
+
+                        <div class="select-container">
+                            <label class="select-label">Quantity Unit</label>
+                            <mat-form-field class="small-select">
+                                <mat-label>Quantity Unit</mat-label>
+                                <mat-select [(ngModel)]="input.quantityUnit" name="QuantityUnit">
+                                    <mat-option *ngFor="let unit of quantityUnits" [value]="unit.value">
+                                        {{unit.viewValue}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+
+                        <div class="radio-container">
+                            <label class="radio-label">Is Have DiscountPrice</label>
+                            <mat-radio-group aria-label="Is Have DiscountPrice" [(ngModel)]="input.isHaveDiscount"
+                                name="isHaveDiscount">
+                                <mat-radio-button [value]="true">Yes</mat-radio-button>
+                                <mat-radio-button [value]="false">No</mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+
+
+                        <div _ngcontent-ng-c2087310016="" class="button-container"><button _ngcontent-ng-c2087310016=""
+                                class="btn btn-primary" (click)="SaveInfo()">Create</button><button
+                                _ngcontent-ng-c2087310016="" class="btn btn-danger"
+                                (click)="backService()">Cancel</button></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

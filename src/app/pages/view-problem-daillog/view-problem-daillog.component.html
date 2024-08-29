@@ -1,0 +1,13 @@
+<div class="problem-card">
+    <mat-card-content>
+        <p class="problem-title">{{ data.title }}</p>
+        <p class="problem-note">{{ data.purpose }}</p>
+        <p class="problem-details">Description: {{ data.description }}</p>
+        <p class="problem-details">User Id: {{ data.userId}}</p>
+        <p class="problem-details">Problem Id: {{ data.problemId }}</p>
+        <p class="problem-details">IsActive: {{ data.isActive }}</p>
+        <p class="problem-details">Creation Date: {{ data.creationDate |date:'dd/MM/yyyy'}}</p>
+        <p class="problem-details">Modified Date: {{ data.modifiedDate |date:'dd/MM/yyyy' }}</p>
+
+    </mat-card-content>
+</div>

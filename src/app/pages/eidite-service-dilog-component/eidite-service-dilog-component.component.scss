@@ -1,0 +1,87 @@
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+ 
+  padding: 20px;
+  
+  background: #f8f9fa;
+
+}
+
+.auth-content {
+  width: 100%;
+  max-width: 500px;
+
+  margin: 0 auto;
+}
+
+.card.custom-card {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  
+}
+
+.btn {
+  width: 48%;
+
+}
+
+.mat-mdc-radio-button~.mat-mdc-radio-button {
+  margin-left: 16px;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-top: 20px;
+
+}
+
+.radio-label {
+  margin-right: 10px;
+
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+}
+
+.select-label {
+  margin-right: 10px;
+ 
+}
+
+.small-select {
+  width: 150px;
+
+  margin-left: 10px;
+
+}
+
+.mat-form-field-wrapper {
+  padding-bottom: 0 !important;
+
+}
+
+.mat-select-trigger {
+  height: 24px !important;
+
+  line-height: 24px !important;
+  
+}
+
+.mat-select {
+  font-size: 12px !important;
+  
+}

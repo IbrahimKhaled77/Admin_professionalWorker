@@ -1,0 +1,35 @@
+<div style="height: 500px; text-align: center; justify-content: center;  align-items: center; margin-top: 100px;">
+  <div _ngcontent-ng-c2087310016="" class="auth-content">
+    <div _ngcontent-ng-c2087310016="" class="card custom-card">
+      <div _ngcontent-ng-c2087310016="" class="row align-items-center text-center">
+        <div _ngcontent-ng-c2087310016="" class="col-md-12">
+          <div _ngcontent-ng-c2087310016="" class="card-body">
+            <div class="select-container">
+
+              <label class="select-label">Status
+
+              </label>
+              <mat-form-field class="small-select">
+                <mat-label>Status</mat-label>
+
+                <mat-select [(ngModel)]="data.status" name="status" required>
+                  <mat-option *ngFor="let status of orderStatuses" [value]="status.value">
+                    <span
+                      [ngStyle]="{'background-color': getStatusColor(status.value), 'color': 'white'}">{{status.viewValue}}</span>
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+
+
+
+            <div _ngcontent-ng-c2087310016="" class="button-container"><button _ngcontent-ng-c2087310016=""
+                class="btn btn-primary" (click)="EiditeOrder()">Update</button><button _ngcontent-ng-c2087310016=""
+                class="btn btn-danger" (click)="GoOrder()">Cancel</button></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

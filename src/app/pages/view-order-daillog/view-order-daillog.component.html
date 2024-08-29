@@ -1,0 +1,17 @@
+<div class="order-card">
+    <mat-card-content>
+        <p class="order-title">{{ data.title }}</p>
+        <p class="order-note">{{ data.note }}</p>
+        <p class="order-details">User ID: {{ data.usersId }}</p>
+        <p class="order-details">Client Name: {{ data.clientName }}</p>
+        <p class="order-details">Status: {{ data.status }}</p>
+        <p class="order-price">Final Price: {{ data.priceFinal2 | currency }}</p>
+        <p class="order-details">Rate: <span class="order-stars">{{ '★'.repeat(data.rate || 0) }}</span></p>
+        <p [ngClass]="{'active-yes': data.isactive === true, 'active-no': data.isactive === false}">
+            Active: {{ data.isactive ? 'Yes' : 'No' }}
+        </p>
+        <p class="order-details">Creation Date: {{ data.creationDate |date:'dd/MM/yyyy' }}</p>
+        <p class="order-details">Modified Date: {{ data.modifiedDate |date:'dd/MM/yyyy' }}</p>
+        <p class="order-details">Order Date: {{ data.dateOrder |date:'dd/MM/yyyy'}}</p>
+    </mat-card-content>
+</div>

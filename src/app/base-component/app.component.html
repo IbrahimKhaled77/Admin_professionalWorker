@@ -1,0 +1,14 @@
+<router-outlet *ngIf="!showAdminLayout"></router-outlet>
+
+<app-admin *ngIf="showAdminLayout"></app-admin>
+
+
+
+
+
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "ball-fussion" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>
+
+
+
+
+

@@ -1,0 +1,94 @@
+<div style="height: 500px; text-align: center; justify-content: center;  align-items: center; margin-top: 100px;">
+    <div _ngcontent-ng-c2087310016="" class="auth-content">
+        <div _ngcontent-ng-c2087310016="" class="card custom-card">
+            <div _ngcontent-ng-c2087310016="" class="row align-items-center text-center">
+                <div _ngcontent-ng-c2087310016="" class="col-md-12">
+                    <div _ngcontent-ng-c2087310016="" class="card-body">
+
+                        <h4 _ngcontent-ng-c2087310016="" class="mb-3 f-w-400">Update Service</h4>
+
+                        <div _ngcontent-ng-c2087310016="" class="input-group mb-3">
+                            <span _ngcontent-ng-c2087310016="" id="basic-addon1" class="input-group-text">
+                                <mat-icon _ngcontent-ng-c2087310016="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+                                    aria-hidden="true" data-mat-icon-type="font">title
+                                </mat-icon></span>
+
+                            <input [(ngModel)]="data.title" name="Title" _ngcontent-ng-c2087310016="" type="text"
+                                placeholder="title" aria-label="title" aria-describedby="basic-addon1"
+                                class="form-control" value="asa">
+                        </div>
+
+                        <div _ngcontent-ng-c2087310016="" class="input-group mb-3">
+                            <span _ngcontent-ng-c2087310016=""
+                                id="basic-addon1" class="input-group-text">
+                                <mat-icon _ngcontent-ng-c2087310016=""
+                                    role="img"
+                                    class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+                                    aria-hidden="true" data-mat-icon-type="font">description
+                                </mat-icon></span>
+
+                            <input [(ngModel)]="data.description" name="Description" _ngcontent-ng-c2087310016=""
+                                type="text" placeholder="description" aria-label="description"
+                                aria-describedby="basic-addon1" class="form-control">
+                        </div>
+
+                        <div _ngcontent-ng-c2087310016="" class="input-group mb-3">
+                            <span _ngcontent-ng-c2087310016=""
+                                id="basic-addon1" class="input-group-text">
+                                <mat-icon _ngcontent-ng-c2087310016=""
+                                    role="img"
+                                    class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+                                    aria-hidden="true" data-mat-icon-type="font">title
+                                </mat-icon></span>
+
+                            <input [(ngModel)]="data.titleArabic" name="titlecategoryArabic"
+                                _ngcontent-ng-c2087310016="" type="text" placeholder="العنوان بالعربي"
+                                aria-label="title" aria-describedby="basic-addon1" class="form-control" value="asa">
+                        </div>
+
+
+                        <div _ngcontent-ng-c2087310016="" class="input-group mb-3">
+                            <span _ngcontent-ng-c2087310016=""
+                                id="basic-addon1" class="input-group-text">
+                                <mat-icon _ngcontent-ng-c2087310016=""
+                                    role="img"
+                                    class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+                                    aria-hidden="true" data-mat-icon-type="font">description
+                                </mat-icon></span>
+
+                            <input [(ngModel)]="data.descriptionArabic" name="descriptionArabic"
+                                _ngcontent-ng-c2087310016="" type="text" placeholder="الوصف بالعربي "
+                                aria-label="description" aria-describedby="basic-addon1" class="form-control">
+                        </div>
+
+                        <div _ngcontent-ng-c2087310016="" class="input-group mb-3">
+                            <span _ngcontent-ng-c2087310016=""
+                                id="basic-addon3" class="input-group-text">
+                                <mat-icon _ngcontent-ng-c2087310016=""
+                                    role="img"
+                                    class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+                                    aria-hidden="true" data-mat-icon-type="font">
+                                    image
+
+                                </mat-icon></span>
+
+                                <input name="imageTitleCategory" (change)="onFileSelected($event)" _ngcontent-ng-c2087310016=""
+                                type="file" placeholder="imagetitle" aria-label="imagetitle"
+                                aria-describedby="basic-addon3" class="form-control">
+                            </div>
+
+                        <div _ngcontent-ng-c2087310016="" class="button-container">
+                            <button _ngcontent-ng-c2087310016=""
+                                class="btn btn-primary" (click)="EiditeCategory()">Update
+                            </button>
+                            <button  _ngcontent-ng-c2087310016="" class="btn btn-danger" (click)="GoHome()">Cancel
+                                
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

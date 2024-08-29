@@ -1,0 +1,138 @@
+<div class="container">
+
+
+  <p>New Service now !!</p>
+
+
+
+  <button mat-raised-button color="primary" matTooltip="Create new Service" (click)="onCreateService()">Create
+    Service</button>
+
+
+
+
+  <br>
+  <br>
+
+  <mat-tab-group>
+    <mat-tab>
+      <ng-template mat-tab-label class="example-tab-label">
+        <mat-icon class="example-tab-icon" style=" margin-right: 10px;">spa</mat-icon>
+        Service
+      </ng-template>
+      <mat-form-field>
+        <mat-label>Filter</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+      </mat-form-field>
+
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource" matSort>
+
+
+
+
+
+          <!-- ID Column -->
+          <ng-container matColumnDef="serviceId">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> serviceId </th>
+            <td mat-cell *matCellDef="let row"> {{row.serviceId}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> name </th>isActive
+            <td mat-cell *matCellDef="let row"> {{row.name}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="titleArabic">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> nameArabic </th>isActive
+            <td mat-cell *matCellDef="let row"> {{row.titleArabic}} </td>
+          </ng-container>
+
+
+
+
+
+          <!-- Progress Column -->
+          <ng-container matColumnDef="price">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> price </th>
+            <td mat-cell *matCellDef="let row"> {{row.price}}</td>
+          </ng-container>
+
+          <!-- Name Column -->
+          <ng-container matColumnDef="PriceAfterDiscount">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> PriceAfterDiscount </th>
+            <td mat-cell *matCellDef="let row"> {{row.priceAfterDiscount}} </td>
+          </ng-container>
+
+          <!-- Fruit Column -->
+          <ng-container matColumnDef="providerUser">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> providerUser </th>
+            <td mat-cell *matCellDef="let row"> {{row.providerUser}} </td>
+          </ng-container>
+
+
+          <ng-container matColumnDef="categoryId">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> categoryId </th>
+            <td mat-cell *matCellDef="let row"> {{row.categoryId}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="userId">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> userId </th>
+            <td mat-cell *matCellDef="let row"> {{row.userId}} </td>
+          </ng-container>
+
+
+
+          <ng-container matColumnDef="isActive">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> isActive </th>
+            <td mat-cell *matCellDef="let row"> {{row.isActive}} </td>
+          </ng-container>
+
+
+
+          <ng-container matColumnDef="Action">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
+            <td mat-cell *matCellDef="let row">
+
+              <div class="example-button-row">
+                <div class="example-flex-container">
+                  <button (click)="OnEditeService(row)" matTooltip="Update Service" mat-icon-button color="primary"
+                    aria-label="Example icon button with a home icon">
+                    <mat-icon>edit</mat-icon>
+                  </button>
+                  <br>
+
+                  <button (click)="OnviewService(row.serviceId)" matTooltip="View Service" mat-icon-button
+                    style="color: aqua;" aria-label="Example icon button with a heart icon">
+                    <mat-icon>visibility</mat-icon>
+                  </button>
+                  <br>
+                  <button (click)="OnDeleteService(row.serviceId)" matTooltip=" delete Service " mat-icon-button
+                    color="warn" aria-label="Example icon button with a heart icon">
+                    <mat-icon>cancel</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </td>
+          </ng-container>
+
+
+
+
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+          <!-- Row shown when there is no matching data. -->
+          <tr class="mat-row" *matNoDataRow>
+            <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+          </tr>
+        </table>
+
+        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+      </div>
+
+
+
+    </mat-tab>
+  </mat-tab-group>

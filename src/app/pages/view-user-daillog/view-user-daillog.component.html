@@ -1,0 +1,21 @@
+<div class="user-card">
+    <img mat-card-image [src]="data.imageProfile" alt="user Image">
+
+    <mat-card-content>
+        <br>
+        <p class="user-name">First Name: {{ data.firstName }}</p>
+        <p class="user-description"> Last Name: {{data.lastName }}</p>
+        <p class="user-details">Email: {{ data.email }}</p>
+
+        <p class="user-details">Phone: {{ data.phone }}</p>
+        <p class="user-details">Birth Date: {{ data.birthDate|date:'dd/MM/yyyy'}}</p>
+        <p class="user-price">User Type: {{ data.userType }}</p>
+        <p class="user-details">User ID: {{ data.userId }}</p>
+        <p [ngClass]="{'active-yes': data.isctive === true, 'active-no': data.isctive === false}">
+            Active: {{ data.isctive ? 'Yes' : 'No' }}
+        </p>
+        <p class="user-details">Creation Date: {{ data.creationDate |date:'dd/MM/yyyy' }}</p>
+        <p class="user-details">Modified Date: {{ data.modifiedDate |date:'dd/MM/yyyy'}}</p>
+
+    </mat-card-content>
+</div>

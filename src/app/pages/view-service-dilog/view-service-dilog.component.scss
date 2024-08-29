@@ -1,0 +1,83 @@
+.service-card {
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+}
+
+.service-card img {
+    width: 80%;
+    border-radius: 8px 8px 0 0;
+}
+
+.service-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.service-description {
+    font-size: 10px;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+.service-details {
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 6px;
+    text-align: left;
+}
+
+.service-price {
+    font-size: 10px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 6px;
+    text-align: left;
+}
+
+.service-status {
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 6px;
+    text-align: left;
+    color: green;
+}
+
+.active-yes {
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 6px;
+    text-align: left;
+    color: green;
+}
+
+.active-no {
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 6px;
+    text-align: left;
+    color: red;
+}
+
+.active-yes {
+    color: green;
+}
+
+.active-no {
+    color: red;
+}
+
+.yes-discount {
+    color: green;
+}
+
+.no-discount {
+    color: red;
+}

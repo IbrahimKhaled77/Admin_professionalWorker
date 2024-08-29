@@ -1,0 +1,24 @@
+<div class="service-card">
+  <img mat-card-image [src]="data.image" alt="Service Image" style="width: 100%; height: 40%;">
+  <mat-card-content>
+    <p class="service-name">{{ data.name }}</p>
+    <p class="service-description">{{data.description }}</p>
+    <p class="service-details">Quantity Unit: {{ quantityUnit[data.quantityUnit!] }}</p>
+    <p class="service-details" [ngClass]="{'yes-discount': data.isHaveDiscount, 'no-discount': !data.isHaveDiscount}">
+      Is Have Discount: {{ data.isHaveDiscount ? 'Yes' : 'No' }}
+    </p>
+    <p class="service-details">Discount Type: {{ data.discountType }}</p>
+    <p class="service-details">Discount Price: {{ data.discountPrice }}</p>
+    <p class="service-price">Price: {{ data.price }}</p>
+    <p class="service-price">priceAfterDiscount: {{ data.priceAfterDiscount }}</p>
+    <p class="service-details">Category ID: {{ data.categoryId }}</p>
+    <p class="service-details">User ID: {{ data.userId }}</p>
+    <p class="service-details">provider Name: {{ data.providerName }}</p>
+    <p [ngClass]="{'active-yes': data.isActive === true, 'active-no': data.isActive === false}">
+      Active: {{ data.isActive ? 'Yes' : 'No' }}
+    </p>
+    <p class="service-details">Creation Date: {{ data.creationDate|date:'dd/MM/yyyy' }}</p>
+    <p class="service-details">Modified Date: {{ data.modifiedDate|date:'dd/MM/yyyy' }}</p>
+
+  </mat-card-content>
+</div>

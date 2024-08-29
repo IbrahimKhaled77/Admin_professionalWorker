@@ -1,0 +1,36 @@
+<div class="auth-wrapper">
+  <div class="auth-content">
+    <div class="card">
+      <div class="row align-items-center text-center">
+        <div class="col-md-12">
+          <div class="card-body">
+
+            <!--image other -->
+            <img src="/assets/images/professionalworkerlogotransparent.png" alt="logo" class="img-fluid mb-4" />
+
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><i class="feather icon-mail"></i></span>
+              <input type="email" [(ngModel)]="input.UserName" name="UserName" class="form-control"
+                placeholder="Email address" aria-label="Username" aria-describedby="basic-addon1" />
+            </div>
+            <div class="input-group mb-4">
+              <span class="input-group-text" id="basic-addon3"><i class="feather icon-lock"></i></span>
+              <input type="password" class="form-control" [(ngModel)]="input.Password" name="Password"
+                placeholder="Password" aria-label="Username" aria-describedby="basic-addon3" />
+            </div>
+
+
+            <div class="d-grid">
+              <button class="btn btn-block btn-primary mb-4" (click)="Login()">SignIn</button>
+            </div>
+
+            <p class="mb-2 text-muted">
+              Forgot password?
+              <a (click)="NaivageteToRestpassword()" class="f-w-400">Reset</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

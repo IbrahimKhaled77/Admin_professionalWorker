@@ -1,0 +1,19 @@
+<div class="Category-card">
+    <img mat-card-image [src]="data.imageTitleCategory" alt="Category Image" style="width: 100%; height: 40%;">
+    <br>
+    <br>
+
+    <mat-card-content>
+
+        <p class="Category-title">{{ data.title }}</p>
+        <p class="Category-note">{{ data.description }}</p>
+        <p class="Category-details">Category Id: {{ data.categoryId }}</p>
+
+        <p [ngClass]="{'active-yes': data.isActive === true, 'active-no': data.isActive === false}">
+            Active: {{ data.isActive ? 'Yes' : 'No' }}
+        </p>
+        <p class="Category-details">Creation Date: {{ data.creationDate |date:'dd/MM/yyyy' }}</p>
+        <p class="Category-details">Modified Date: {{ data.modifiedDate |date:'dd/MM/yyyy' }}</p>
+
+    </mat-card-content>
+</div>

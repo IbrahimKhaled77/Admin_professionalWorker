@@ -1,0 +1,10 @@
+<div style="text-align: center; height: 130px;">
+  <h1 mat-dialog-title style="font-size: 20px; font-weight: bold;">{{data.title}}</h1>
+  <div mat-dialog-content style="text-align: center;">
+    {{data.description}}
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button mat-dialog-close cdkFocusInitial style="color:blue " (click)="ClickYes()">yes</button>
+    <button mat-button mat-dialog-close style="color:red " (click)="ClickNo()">No</button>
+  </div>
+</div>
