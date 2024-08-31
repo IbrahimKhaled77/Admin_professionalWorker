@@ -11,7 +11,7 @@ export class  orderDtOById{
     rate                 :number|undefined
     creationDate          :Date|undefined
     modifiedDate          :Date|undefined
-    status                   :string|undefined
+    status                   :number|undefined
     usersId          :number|undefined
     clientName            :string|undefined
     isactive          :boolean|undefined

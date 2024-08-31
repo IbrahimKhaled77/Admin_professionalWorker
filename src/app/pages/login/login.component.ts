@@ -104,7 +104,7 @@ export class LoginComponent {
 
     }, err => {
       this.spinner.hide()
-      this.toastr.error('Error Logout not ');
+   //   this.toastr.error('Error Logout not ');
     });;
 
 

@@ -19,6 +19,7 @@ import { MainSericesService } from 'src/app/backend/main-serices.service';
 export class ViewOrderDaillogComponent {
   rate: number = 0;
   stars: number[] = [1, 2, 3, 4, 5]; 
+  status: string[] = ['Pending', 'Shipped', 'Delivered', 'Cancelled'];
   constructor(public dialogRef: MatDialogRef<ViewOrderDaillogComponent>, public backend: MainSericesService, private toastr: ToastrService, public spinner: NgxSpinnerService,
     @Inject(MAT_DIALOG_DATA) public data: orderDtOById
 

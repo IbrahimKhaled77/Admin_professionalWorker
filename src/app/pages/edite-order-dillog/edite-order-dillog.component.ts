@@ -44,20 +44,21 @@ export class EditeOrderDillogComponent {
 
 
     this.input.orderId = this.data.orderId;
-
+    this.input.status=this.data.status;
 
  
     this.spinner.show()
     this.backend.UpdateOrder(this.input).subscribe(src => {
 
       this.spinner.hide()
-      this.toastr.success('Created Order Successfully')
+      
+      this.toastr.success('Update Order Successfully')
       this.dialogRef.close();
 
     }, err => {
 
       this.spinner.hide()
-      this.toastr.error('Failed To Creat Category')
+      this.toastr.error('Failed To Update Order')
 
     }
     )

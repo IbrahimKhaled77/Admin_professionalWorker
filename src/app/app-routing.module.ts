@@ -10,7 +10,7 @@ import { ManageOrderComponent } from './pages/manage-order/manage-order.componen
 import { ErrorComponent } from './pages/error/error.component';
 import { ManageProblemComponent } from './pages/manage-problem/manage-problem.component';
 import { NavBarSharedComponent } from './shared-compnent/nav-bar-shared/nav-bar-shared.component';
-import { NavComponent } from './shared-compnent/nav/nav.component';
+
 
 
 const routes: Routes = [
@@ -46,12 +46,7 @@ const routes: Routes = [
     component:ManageCategoryComponent
 
   },
-  { 
 
-    path:'NavComponent',
-    component:NavComponent
-
-  },
   { 
 
     path:'NavBarShared',
